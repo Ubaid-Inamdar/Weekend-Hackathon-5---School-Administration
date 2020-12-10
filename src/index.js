@@ -71,7 +71,7 @@ app.post('/api/student',(req,res)=>{
             }
     
             if(req.body.division){
-                data[studentIndex].division=req.body.division
+                data[studentIndex].division=req.body.division;
             }
     
             res.status(200).send(data[studentIndex]);

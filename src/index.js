@@ -34,8 +34,6 @@ app.get('/api/student',(req,res)=>{
     
     if(student){
         res.status(200).send(student);
-    }else{
-        res.status(404).send('id isa invalid');
     }
 });
 
